@@ -1,0 +1,24 @@
+{
+  "name": "jsexpert-week",
+  "version": "1.0.0",
+  "description": "jsexpert-week",
+  "main": "index.js",
+  "scripts": {
+    "assets": "npx http-server --cors -p 8081 assets/",
+    "dev": "npx http-server --cors -p 8080 public/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wr2net/jsexpert-week.git"
+  },
+  "keywords": [],
+  "author": "Wagner <wagner@rigolidarosa.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wr2net/jsexpert-week/issues"
+  },
+  "homepage": "https://github.com/wr2net/jsexpert-week#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
