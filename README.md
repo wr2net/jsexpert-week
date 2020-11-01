@@ -1,4 +1,4 @@
-# Projeto base da JS Expert Week
+# Projeto JS Expert Week
 
 ## Lista de Títulos
 
