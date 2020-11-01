@@ -8,10 +8,11 @@ class VideoMediaPlayer {
         this.sourceBuffer = null
         this.selected = {}
         this.videoDuration = 0
+        this.selections = []
     }
 
     initializeCodec() {
-        this.videoElement = document.createElementById("vid")
+        this.videoElement = document.getElementById("vid")
         const mediaSourceSupported = !!window.MediaSource
         if(!mediaSourceSupported) {
             alert("Seu broeser ou sistema nao tem suporte a MSE!")

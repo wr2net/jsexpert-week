@@ -24,15 +24,20 @@ class VideoComponent {
     }
 
     getModalTemplate(options, modal) {
-        return () => {
+        return (_) => {
             const [option1, option2] = options
             const htmlTemplate = `
-                <div class="overlay">
-                    <div class="videoButtonWrapper">
-                        <button class="btn btn-dark" onclick="window.nexChunk('${option1}')">{$option1}</button>
-                        <button class="btn btn-dark" onclick="window.nexChunk('${option2}')">{$option2}</button>
-                    </div>
-                </div>`
+            <div class='overlay'>
+                <div class='videoButtonWrapper'>
+                    <button class="btn btn-dark" onclick="window.nextChunk('${option1}')">
+                        ${option1}
+                    </button>
+                    <button class="btn btn-dark" onclick="window.nextChunk('${option2}')">
+                        ${option2}
+                    </button>
+                </div>
+            </div>
+            `
             modal.contentEl().innerHTML = htmlTemplate
         }
     }

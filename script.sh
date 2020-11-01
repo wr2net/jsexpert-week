@@ -52,4 +52,8 @@ for mediaFile in `ls $ASSETSFOLDER | grep .mp4`; do
       -vf "sacle=256:144" \
       -v quiet \
       $OUTPUT144.mp4
+
+      echo $OUTPUT144
+      echo $OUTPUT360
+      echo $OUTPUT720
 done
